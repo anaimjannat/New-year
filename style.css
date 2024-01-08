@@ -36,7 +36,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 .header::before {
@@ -64,13 +64,101 @@ p {
     font-size: 35px;
     margin: 10px 0 0 0;
 }
+
 /* Offer section with new year image */
-.offer{
+.offer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;}
+    justify-content: center;
+}
 
+.primary-text {
+    color: #F00;
+    text-align: center;
+}
+
+#percantage {
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.holiday-deal {
+    color: #F00;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.all-categories {
+    color: #070211;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.newyear {
+    width: 800px;
+    height: 500px;
+}
+
+/* welcome */
+.welcome {
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(90deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%),
+        url("resources/Vectorrr.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin: 140px;
+    padding: 120px;
+    border-radius: 15px;
+    justify-content: space-between;
+}
+
+.welcome-text {
+    color: #FFF;
+}
+
+.welcome-para {
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 20px;
+    /* 166.667% */
+}
+
+/* .join {
+    color: black;
+    background-color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+ */
+ .join {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 15px;
+  }
+  
+  .join:hover {
+    background-color: #db7f16;
+    color: white;
+  }
+
+/* address and time */
+
+
+/* Image grid section */
 .image-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
