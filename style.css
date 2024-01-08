@@ -1,0 +1,96 @@
+/* .banner {
+    margin: 50px 140px;
+    background-image: url("resources/Banner\ Image.png");
+    max-width: 100%;
+    border-radius: 16px;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.banner-text {
+    margin: 233px 344px;
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+}
+
+h1 {
+    color: #FFF;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 95px;
+} */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 100vh;
+    background-image: url("resources/Banner\ Image.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.7) 100%);
+    z-index: -1;
+}
+
+.content {
+    text-align: center;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 70px;
+    margin: 0;
+}
+
+p {
+    font-size: 35px;
+    margin: 10px 0 0 0;
+}
+/* Offer section with new year image */
+.offer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 140px;
+    gap: 15px;
+    padding: 20px;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.grid-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container:hover .grid-image {
+    transform: scale(1.1);
+}
