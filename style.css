@@ -1,68 +1,33 @@
-/* .banner {
-    margin: 50px 140px;
-    background-image: url("resources/Banner\ Image.png");
-    max-width: 100%;
-    border-radius: 16px;
-    background-size: cover;
-    background-position: center;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.banner-text {
-    margin: 233px 344px;
-    color: #FFF;
-    text-align: center;
-    font-size: 32px;
-}
-
-h1 {
-    color: #FFF;
-    font-size: 50px;
-    font-weight: 900;
-    line-height: 95px;
-} */
-body {
-    margin: 0;
-    padding: 0;
-}
-
+/* Header section */
 .header {
-    height: 100vh;
-    background-image: url("resources/Banner\ Image.png") center/cover no-repeat;
+    background-image: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0) 100%),
+        url("resources/Banner\ Image.png");
+    background-repeat: no-repeat;
+    width: cover;
+    height: 600px;
+    border-radius: 16px;
     display: flex;
-    align-items: center;
     justify-content: center;
-
-}
-
-.header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.7) 100%);
-    z-index: -1;
+    align-items: center;
 }
 
 .content {
     text-align: center;
-    z-index: 1;
+    color: white;
 }
 
-h1 {
-    font-size: 70px;
-    margin: 0;
+.wish {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: normal;
 }
 
-p {
-    font-size: 35px;
-    margin: 10px 0 0 0;
+.celebrate {
+    text-align: center;
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 95px;
 }
 
 /* Offer section with new year image */
@@ -102,22 +67,32 @@ p {
     height: 500px;
 }
 
-/* welcome */
+/* welcome aection*/
 .welcome {
-    display: flex;
-    align-items: center;
-    background-image: linear-gradient(90deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%),
+    background-image: linear-gradient(90deg, #070211 0%, rgba(7, 2, 17, 0) 100%),
         url("resources/Vectorrr.png");
     background-repeat: no-repeat;
-    background-size: auto;
-    margin: 140px;
-    padding: 120px;
-    border-radius: 15px;
-    justify-content: space-between;
+    width: cover;
+    height: 600px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 120px;
+    padding-left: 125px;
+    padding-right: 125px;
 }
 
 .welcome-text {
     color: #FFF;
+}
+
+.party {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 88px;
+    letter-spacing: 7.04px;
 }
 
 .welcome-para {
@@ -125,37 +100,37 @@ p {
     font-size: 20px;
     font-weight: 300;
     line-height: 20px;
-    /* 166.667% */
 }
 
-/* .join {
-    color: black;
-    background-color: #FFF;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
- */
 .join {
-    background-color: white;
-    color: black;
-    border: 2px solid #555555;
+    color: #FFF;
+    background: none;
+    border: none;
     text-align: center;
     font-size: 20px;
     font-weight: 700;
+    line-height: normal;
     text-transform: uppercase;
-    border-radius: 10px;
-    margin-left: 50px;
-    margin-top: 15px;
+    margin-left: 80px;
 }
 
 .join:hover {
-    background-color: #db7f16;
+    background-color: #dd3012;
     color: white;
+    border-radius: 10px;
 }
 
-/* address and time */
+.welcome-img {
+    display: flex;
+    width: 319.83px;
+    height: 464.662px;
+    padding: 10px 0px 0px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* address and time section */
 .address {
     color: #070211;
     align-items: center;
@@ -191,7 +166,7 @@ p {
     color: white;
 }
 
-/* New offer */
+/* New offer section*/
 .new-offer {
     display: flex;
     align-items: center;
@@ -246,7 +221,7 @@ p {
     padding-top: 10px;
 }
 
-/* Holiday sale */
+/* Holiday sale section*/
 .holiday-text {
     align-items: center;
     text-align: center;
@@ -281,7 +256,8 @@ p {
 /* Image grid section */
 .grid-text {
     text-align: left;
-    margin: 140px;
+    margin-left: 140px;
+    margin-top: 140px;
     padding: 0px;
 }
 
@@ -354,7 +330,8 @@ p {
     line-height: 32px;
     width: 896px;
 }
-.input-mail{
+
+.input-mail {
     display: inline-block;
     margin-top: 100px;
 }
@@ -379,4 +356,94 @@ p {
     padding: 10px 10px;
     color: #FFF;
     left: -47px;
+}
+
+/* Footer section */
+footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot-section {
+    background: #070211;
+    width: auto;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.foot-sub-section {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 50px 120px 50px 120px;
+}
+
+.real-address {
+    width: 375px;
+    height: 80px;
+    color: #fff;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: left;
+}
+
+.contact-num {
+    color: #fff;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: left;
+    align-items: center;
+}
+
+.website {
+    color: #fff;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: left;
+    align-items: center;
+}
+
+hr {
+    width: 1070px;
+    height: 1px;
+    color: rgba(255, 255, 255, 0.15);
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-pic {
+    padding: 25px 24px 24px 48px;
+}
+
+.foot-lower-section {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.copy-rights {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 120px;
+    padding-right: 120px;
 }
